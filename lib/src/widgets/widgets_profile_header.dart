@@ -1,5 +1,7 @@
+import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
+import 'widgets_header_user.dart';
 
 enum HeaderType { normal }
 
@@ -18,14 +20,14 @@ class WidgetsProfileHeader extends StatelessWidget {
 
   Widget _getWidgets() {
     if (itemType == HeaderType.normal) {
-      // return WidgetsHeaderUser(
-      //   nickname: nickname,
-      //   itro: itro,
-      //   avatar: avatar,
-      //   gestureTapCallback: () {
-      //     Get.toNamed(ComponentsRoutesNames.userInfo);
-      //   },
-      // );
+      return WidgetsHeaderUser(
+        nickname: nickname,
+        itro: itro,
+        avatar: avatar,
+        gestureTapCallback: () {
+          Get.toNamed(YcRoutesNames.userInfo);
+        },
+      );
     }
     return Container();
   }

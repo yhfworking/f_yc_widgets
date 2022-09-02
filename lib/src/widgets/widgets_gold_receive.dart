@@ -1,3 +1,4 @@
+import 'package:f_yc_pangle/f_yc_pangle.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -55,8 +56,8 @@ class WidgetsGoldReceive extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 50),
               child: ElevatedButton(
                 onPressed: () async {
-                  // Get.back();
-                  // await ComponentsPangle.showFullScreenVideoAd();
+                  Get.back();
+                  await YcPangle.showFullScreenVideoAd();
                 },
                 style: ButtonStyle(
                     backgroundColor:

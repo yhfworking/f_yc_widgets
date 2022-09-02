@@ -1,3 +1,4 @@
+import 'package:f_yc_apis/f_yc_apis.dart';
 import 'package:f_yc_config/f_yc_config.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
@@ -122,14 +123,13 @@ class WidgetsCashOutOptions extends StatelessWidget {
             width: Get.width - 30,
             child: ElevatedButton(
               onPressed: () async {
-                // if (_amount > 0 && YcConfig.isLogin()) {
-                //   Get.back();
-                //   bool isSuccess =
-                //       await ComponentsApisDefault.submitCashOut(_amount);
-                //   if (isSuccess) {
-                //     SnackbarUtils.showSuccess('提交成功，请耐心等待审核！');
-                //   }
-                // }
+                if (_amount > 0 && YcConfig.isLogin()) {
+                  Get.back();
+                  bool isSuccess = await YcApisDefault.submitCashOut(_amount);
+                  if (isSuccess) {
+                    SnackbarUtils.showSuccess('提交成功，请耐心等待审核！');
+                  }
+                }
               },
               style: ButtonStyle(
                   elevation: MaterialStateProperty.all(0),

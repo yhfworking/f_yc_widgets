@@ -1,3 +1,5 @@
+import 'package:f_yc_apis/f_yc_apis.dart';
+import 'package:f_yc_compose/f_yc_compose.dart';
 import 'package:f_yc_config/f_yc_config.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
@@ -53,10 +55,10 @@ class WidgetsAppPraise extends StatelessWidget {
                       height: 48,
                       child: ElevatedButton(
                         onPressed: () async {
-                          // if (YcConfig.isLogin()) {
-                          //   await ComponentsApisDefault.reportAppPraise();
-                          // }
-                          // YcLaunchReview.toStoreReview();
+                          if (YcConfig.isLogin()) {
+                            await YcApisDefault.reportAppPraise();
+                          }
+                          YcLaunchReview.toStoreReview();
                           Get.back();
                         },
                         style: ButtonStyle(

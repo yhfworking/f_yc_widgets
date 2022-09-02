@@ -19,9 +19,11 @@ dependencies:
     git: https://github.com/yhfworking/f_yc_compose.git
   f_yc_pangle:
     git: https://github.com/yhfworking/f_yc_pangle.git
+  f_yc_pages:
+    git: https://github.com/yhfworking/f_yc_pages.git
+  f_yc_apis:
+    git: https://github.com/yhfworking/f_yc_apis.git
   group_button: ^5.2.0
-  url_launcher: ^6.1.5
-  get_storage: ^2.0.3
 
 dev_dependencies:
   flutter_test:

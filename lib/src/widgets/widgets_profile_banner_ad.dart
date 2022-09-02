@@ -1,4 +1,5 @@
 import 'package:f_yc_config/f_yc_config.dart';
+import 'package:f_yc_pangle/f_yc_pangle.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
 
@@ -23,17 +24,17 @@ class WidgetsProfileBannerAd extends StatelessWidget {
         child: AspectRatio(
             aspectRatio: 4.0,
             child: Center(
-                // child: AdBannerWidget(
-                //   posId: pangleProfileBannerAdId,
-                //   width: width != null ? width!.toInt() : Get.width.toInt(),
-                //   height: (width != null ? width! / 4.0 : Get.width / 4.0)
-                //       .toDouble()
-                //       .toInt(),
-                //   interval: 30,
-                //   show: true,
-                //   autoClose: false,
-                // ),
-                )));
+              child: AdBannerWidget(
+                posId: pangleProfileBannerAdId,
+                width: width != null ? width!.toInt() : Get.width.toInt(),
+                height: (width != null ? width! / 4.0 : Get.width / 4.0)
+                    .toDouble()
+                    .toInt(),
+                interval: 30,
+                show: true,
+                autoClose: false,
+              ),
+            )));
   }
 
   @override

@@ -1,6 +1,5 @@
 import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class WidgetsVersionUpgrade extends StatelessWidget {
   final String url;

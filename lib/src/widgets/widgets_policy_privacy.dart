@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
-import 'package:get_storage/get_storage.dart';
 
 class WidgetsPolicyPrivacy extends StatelessWidget {
   final Color? primaryColor;
