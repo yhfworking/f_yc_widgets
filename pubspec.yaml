@@ -23,7 +23,7 @@ dependencies:
     git: https://github.com/yhfworking/f_yc_pages.git
   f_yc_apis:
     git: https://github.com/yhfworking/f_yc_apis.git
-  group_button: ^5.2.0
+  # group_button: ^5.2.0
 
 dev_dependencies:
   flutter_test:
