@@ -13,3 +13,4 @@ export './widgets_gold_receive.dart';
 export './widgets_ad_tips.dart';
 export './widgets_float_re_icon.dart';
 export './widgets_app_praise.dart';
+export './widgets_cash_out_options.dart';
