@@ -1,9 +1,9 @@
 import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
-import 'widgets_header_user.dart';
+import 'widgets_profile_user_info_1.dart';
 
-enum HeaderType { normal }
+enum HeaderType { avatarLeft, avatarRight }
 
 class WidgetsProfileHeader extends StatelessWidget {
   final HeaderType itemType;
@@ -19,8 +19,19 @@ class WidgetsProfileHeader extends StatelessWidget {
       : super(key: key);
 
   Widget _getWidgets() {
-    if (itemType == HeaderType.normal) {
-      return WidgetsHeaderUser(
+    if (itemType == HeaderType.avatarLeft) {
+      return WidgetsProfileUserInfo1(
+        isAvatarRight: false,
+        nickname: nickname,
+        itro: itro,
+        avatar: avatar,
+        gestureTapCallback: () {
+          Get.toNamed(YcRoutesNames.userInfo);
+        },
+      );
+    } else if (itemType == HeaderType.avatarRight) {
+      return WidgetsProfileUserInfo1(
+        isAvatarRight: true,
         nickname: nickname,
         itro: itro,
         avatar: avatar,
