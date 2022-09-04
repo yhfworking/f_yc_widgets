@@ -77,7 +77,7 @@ class WidgetsProfileUserInfo1 extends StatelessWidget {
           behavior: HitTestBehavior.opaque,
           onTap: gestureTapCallback,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
