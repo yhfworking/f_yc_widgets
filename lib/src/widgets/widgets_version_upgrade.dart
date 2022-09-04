@@ -34,7 +34,7 @@ class WidgetsVersionUpgrade extends StatelessWidget {
                   width: cardWidth,
                   height: topBgHeight,
                   child: Image.asset('assets/images/version_upgrade_bg.png',
-                      fit: BoxFit.fill),
+                      package: 'f_yc_widgets', fit: BoxFit.fill),
                 ),
                 Container(
                   width: cardWidth,

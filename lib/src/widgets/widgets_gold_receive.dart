@@ -17,7 +17,8 @@ class WidgetsGoldReceive extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
-              image: AssetImage('assets/images/gold_receive_bg.png')),
+              image: AssetImage('assets/images/gold_receive_bg.png',
+                  package: 'f_yc_widgets')),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,

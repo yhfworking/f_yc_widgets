@@ -54,8 +54,10 @@ class _SignRewardItemState extends State<SignRewardItem>
                 fit: BoxFit.cover,
                 image: widget.isNormal!
                     ? const AssetImage(
-                        'assets/images/sign_cash_item_bg_normal.png')
-                    : const AssetImage('assets/images/sign_cash_item_bg.png'),
+                        'assets/images/sign_cash_item_bg_normal.png',
+                        package: 'f_yc_widgets')
+                    : const AssetImage('assets/images/sign_cash_item_bg.png',
+                        package: 'f_yc_widgets'),
               ),
             ),
             child: Column(

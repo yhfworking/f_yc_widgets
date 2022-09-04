@@ -71,8 +71,8 @@ class _SignRewardMoreState extends State<SignRewardMore>
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image:
-                          AssetImage('assets/images/sign_cash_reward_bg.png'),
+                      image: AssetImage('assets/images/sign_cash_reward_bg.png',
+                          package: 'f_yc_widgets'),
                     ),
                   ),
                   child: Column(

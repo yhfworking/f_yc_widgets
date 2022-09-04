@@ -58,7 +58,7 @@ class _WidgetsRewardAdGuideState extends State<WidgetsRewardAdGuide> {
                 width: Get.width * 3.0 / 5.0,
                 height: Get.width * 3.0 / 5.0,
                 child: Image.asset('assets/images/sign_reward_guide_icon.png',
-                    fit: BoxFit.fill)),
+                    package: 'f_yc_widgets', fit: BoxFit.fill)),
             Container(
                 margin: const EdgeInsets.only(top: 20, bottom: 10),
                 width: Get.width / 2.0,

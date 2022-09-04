@@ -39,7 +39,7 @@ class WidgetsAppPraise extends StatelessWidget {
                 SizedBox(
                   height: iconHeight,
                   child: Image.asset('assets/images/app_praise_icon.png',
-                      fit: BoxFit.fill),
+                      package: 'f_yc_widgets', fit: BoxFit.fill),
                 ),
                 Container(
                   width: cardWidth,

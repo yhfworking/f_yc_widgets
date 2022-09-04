@@ -45,7 +45,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                         width: 20,
                         height: 20,
                         child: Image.asset('assets/icons/icon_gold.png',
-                            fit: BoxFit.fill),
+                            package: 'f_yc_widgets', fit: BoxFit.fill),
                       ),
                   Text(
                     title ?? '我的金币',

@@ -58,7 +58,7 @@ class WidgetsProfileUserInfo1 extends StatelessWidget {
                   height: 66,
                   child: avatar.isEmpty
                       ? Image.asset('assets/images/default_avatar.png',
-                          fit: BoxFit.fill)
+                          package: 'f_yc_widgets', fit: BoxFit.fill)
                       : CircleAvatar(
                           radius: 33,
                           backgroundColor: Colors.white70,
@@ -85,7 +85,7 @@ class WidgetsProfileUserInfo1 extends StatelessWidget {
                   height: 66,
                   child: avatar.isEmpty
                       ? Image.asset('assets/images/default_avatar.png',
-                          fit: BoxFit.fill)
+                          package: 'f_yc_widgets', fit: BoxFit.fill)
                       : CircleAvatar(
                           radius: 33,
                           backgroundColor: Colors.white70,

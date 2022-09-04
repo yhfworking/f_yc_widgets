@@ -37,7 +37,7 @@ class WidgetsNetworkTips extends StatelessWidget {
                     width: cardWidth,
                     height: iconHeight,
                     child: Image.asset('assets/images/error_netwrork_bg.png',
-                        fit: BoxFit.fill)),
+                        package: 'f_yc_widgets', fit: BoxFit.fill)),
                 Container(
                   width: cardWidth,
                   height: 80,
