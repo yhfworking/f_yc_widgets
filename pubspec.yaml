@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  bruno: ^3.1.0
   google_fonts: ^3.0.1
   f_yc_config:
     git: https://github.com/yhfworking/f_yc_config.git
