@@ -1,7 +1,6 @@
 import 'dart:async';
-import 'package:f_yc_pangle/f_yc_pangle.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 
 class WidgetsRewardAdGuide extends StatefulWidget {
   final String rewardType;
@@ -24,9 +23,9 @@ class _WidgetsRewardAdGuideState extends State<WidgetsRewardAdGuide> {
       });
       if (_progressValue >= 1.0) {
         timer.cancel();
-        YcPangle.showRewardVideoAd(
-          customData: widget.rewardType,
-        );
+        // YcPangle.showRewardVideoAd(
+        //   customData: widget.rewardType,
+        // );
         Get.back();
       }
     });

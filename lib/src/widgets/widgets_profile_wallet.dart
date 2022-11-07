@@ -1,7 +1,7 @@
-import 'package:f_yc_config/f_yc_config.dart';
-import 'package:f_yc_pages/f_yc_pages.dart';
+import 'package:f_yc_widgets/f_yc_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WidgetsProfileWallet extends StatelessWidget {
   final Widget? icon;
@@ -23,7 +23,7 @@ class WidgetsProfileWallet extends StatelessWidget {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () {
-        Get.toNamed(YcRoutesNames.wallet);
+        // Get.toNamed(YcRoutesNames.wallet);
       },
       child: Container(
         height: 100,
@@ -116,7 +116,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                             backgroundColor:
                                 MaterialStateProperty.all(Colors.white),
                             foregroundColor: MaterialStateProperty.all(
-                                YcConfig.primaryColor()),
+                                FYcWidgets.commonConfig.primaryColor),
                             elevation: MaterialStateProperty.all(0),
                             textStyle: MaterialStateProperty.all(
                                 const TextStyle(
@@ -125,7 +125,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                                 width: 1, color: Colors.grey.shade300)), //边框
                           ),
                           onPressed: () {
-                            Get.toNamed(YcRoutesNames.wallet);
+                            // Get.toNamed(YcRoutesNames.wallet);
                           },
                           child: Text(btnTitle ?? '去提现'),
                         ),

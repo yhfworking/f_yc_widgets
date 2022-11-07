@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 
 class WidgetsPolicyPrivacy extends StatelessWidget {
   final Color? primaryColor;
@@ -105,9 +105,9 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
                       height: 44,
                       child: ElevatedButton(
                         onPressed: () async {
-                          await GetStorage().write(
-                              'Storage_Key_Is_Sign_Privacy_Policy', true);
-                          Get.back();
+                          // await GetStorage().write(
+                          //     'Storage_Key_Is_Sign_Privacy_Policy', true);
+                          // Get.back();
                         },
                         style: ButtonStyle(
                             backgroundColor:

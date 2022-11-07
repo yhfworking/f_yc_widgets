@@ -1,5 +1,5 @@
-import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class WidgetsVersionUpgrade extends StatelessWidget {
   final String url;
@@ -81,8 +81,8 @@ class WidgetsVersionUpgrade extends StatelessWidget {
                     height: 48,
                     child: ElevatedButton(
                       onPressed: () async {
-                        Get.back();
-                        await launchUrl(Uri.parse(url));
+                        // Get.back();
+                        // await launchUrl(Uri.parse(url));
                       },
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(

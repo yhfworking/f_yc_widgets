@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 
 class WidgetsListGroove extends StatelessWidget {
   final Color? color;

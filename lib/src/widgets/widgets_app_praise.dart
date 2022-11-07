@@ -1,8 +1,6 @@
-import 'package:f_yc_apis/f_yc_apis.dart';
-import 'package:f_yc_compose/f_yc_compose.dart';
-import 'package:f_yc_config/f_yc_config.dart';
+import 'package:f_yc_widgets/f_yc_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 
 class WidgetsAppPraise extends StatelessWidget {
   const WidgetsAppPraise({Key? key}) : super(key: key);
@@ -55,15 +53,15 @@ class WidgetsAppPraise extends StatelessWidget {
                       height: 48,
                       child: ElevatedButton(
                         onPressed: () async {
-                          if (YcConfig.isLogin()) {
-                            await YcApisDefault.reportAppPraise();
-                          }
-                          YcLaunchReview.toStoreReview();
-                          Get.back();
+                          // if (FYcSto.isLogin()) {
+                          //   await YcApisDefault.reportAppPraise();
+                          // }
+                          // YcLaunchReview.toStoreReview();
+                          // Get.back();
                         },
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
-                                YcConfig.primaryColor()),
+                                FYcWidgets.commonConfig.primaryColor),
                             elevation: MaterialStateProperty.all(0)),
                         child: const Text(
                           '去给五星好评',

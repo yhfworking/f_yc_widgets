@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 
 class WidgetsNetworkTips extends StatelessWidget {
   const WidgetsNetworkTips({Key? key}) : super(key: key);

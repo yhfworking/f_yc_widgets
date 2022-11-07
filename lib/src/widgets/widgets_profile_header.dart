@@ -1,6 +1,4 @@
-import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
 import 'widgets_profile_user_info_1.dart';
 
 enum HeaderType { avatarLeft, avatarRight }
@@ -26,7 +24,7 @@ class WidgetsProfileHeader extends StatelessWidget {
         itro: itro,
         avatar: avatar,
         gestureTapCallback: () {
-          Get.toNamed(YcRoutesNames.userInfo);
+          // Get.toNamed(YcRoutesNames.userInfo);
         },
       );
     } else if (itemType == HeaderType.avatarRight) {
@@ -36,7 +34,7 @@ class WidgetsProfileHeader extends StatelessWidget {
         itro: itro,
         avatar: avatar,
         gestureTapCallback: () {
-          Get.toNamed(YcRoutesNames.userInfo);
+          // Get.toNamed(YcRoutesNames.userInfo);
         },
       );
     }

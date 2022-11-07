@@ -1,7 +1,5 @@
-import 'package:f_yc_config/f_yc_config.dart';
-import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:get/get.dart';
 import 'widgets_reward_ad_guide.dart';
 
 class WidgetsFloatReIcon extends StatefulWidget {
@@ -49,17 +47,17 @@ class _WidgetsFloatReIconState extends State<WidgetsFloatReIcon>
         child: Center(
             child: GestureDetector(
           onTap: () {
-            if (!YcConfig.isLogin()) {
-              Get.toNamed(YcRoutesNames.login);
-              return;
-            }
-            LoadingUtils.show();
-            Future.delayed(const Duration(milliseconds: 1500), () {
-              LoadingUtils.dismiss();
-              Get.dialog(const WidgetsRewardAdGuide(
-                rewardType: 'timerRewardRe',
-              ));
-            });
+            // if (!FYcConfig.isLogin()) {
+            //   Get.toNamed(YcRoutesNames.login);
+            //   return;
+            // }
+            // LoadingUtils.show();
+            // Future.delayed(const Duration(milliseconds: 1500), () {
+            //   LoadingUtils.dismiss();
+            //   Get.dialog(const WidgetsRewardAdGuide(
+            //     rewardType: 'timerRewardRe',
+            //   ));
+            // });
           },
           child: Image.network(
               'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/faa95949-abf9-4a13-be17-176309590de2.png'),

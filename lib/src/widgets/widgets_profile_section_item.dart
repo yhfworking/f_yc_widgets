@@ -1,8 +1,4 @@
-import 'package:f_yc_compose/f_yc_compose.dart';
-import 'package:f_yc_config/f_yc_config.dart';
-import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
 import 'index.dart';
 
 enum ItemType {
@@ -39,7 +35,7 @@ class WidgetsProfileSectionItem extends StatelessWidget {
           isArrow: isArrow ?? true,
           onTap: onTap ??
               () {
-                Get.toNamed(YcRoutesNames.setting);
+                // Get.toNamed(YcRoutesNames.setting);
               });
     } else if (itemType == ItemType.appPraise) {
       return WidgetsListItem(
@@ -48,7 +44,7 @@ class WidgetsProfileSectionItem extends StatelessWidget {
           isArrow: isArrow ?? true,
           onTap: onTap ??
               () {
-                YcLaunchReview.toStoreReview();
+                // YcLaunchReview.toStoreReview();
               });
     } else if (itemType == ItemType.openCustomerService) {
       return WidgetsListItem(
@@ -57,11 +53,11 @@ class WidgetsProfileSectionItem extends StatelessWidget {
           isArrow: isArrow ?? true,
           onTap: onTap ??
               () async {
-                if (YcConfig.isInR()) {
-                  YcShare.sharesWithSystem();
-                } else {
-                  YcWechat.openCustomerService();
-                }
+                // if (YcConfig.isInR()) {
+                //   YcShare.sharesWithSystem();
+                // } else {
+                //   YcWechat.openCustomerService();
+                // }
               });
     } else if (itemType == ItemType.shareAppToWxSession) {
       return WidgetsListItem(
@@ -70,11 +66,11 @@ class WidgetsProfileSectionItem extends StatelessWidget {
           isArrow: isArrow ?? true,
           onTap: onTap ??
               () {
-                if (YcConfig.isInR()) {
-                  YcShare.sharesWithSystem();
-                } else {
-                  YcWechat.shareAppToWxSession();
-                }
+                // if (YcConfig.isInR()) {
+                //   YcShare.sharesWithSystem();
+                // } else {
+                //   YcWechat.shareAppToWxSession();
+                // }
               });
     } else if (itemType == ItemType.shareAppToWxTimeline) {
       return WidgetsListItem(
@@ -83,7 +79,7 @@ class WidgetsProfileSectionItem extends StatelessWidget {
           isArrow: isArrow ?? true,
           onTap: onTap ??
               () {
-                YcWechat.shareAppToWxTimeline();
+                // YcWechat.shareAppToWxTimeline();
               });
     } else if (itemType == ItemType.myWallet) {
       return WidgetsListItem(

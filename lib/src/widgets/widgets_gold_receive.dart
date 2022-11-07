@@ -1,6 +1,6 @@
-import 'package:f_yc_pangle/f_yc_pangle.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class WidgetsGoldReceive extends StatelessWidget {
   final int? amount;
@@ -58,7 +58,7 @@ class WidgetsGoldReceive extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () async {
                   Get.back();
-                  await YcPangle.showFullScreenVideoAd();
+                  // await YcPangle.showFullScreenVideoAd();
                 },
                 style: ButtonStyle(
                     backgroundColor:

@@ -1,6 +1,4 @@
-import 'package:f_yc_pages/f_yc_pages.dart';
 import 'package:flutter/material.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
 
 enum ProfileToolsType { square, dailyTasks, introduction, ranking }
 
@@ -22,27 +20,27 @@ class WidgetsProfileTools extends StatelessWidget {
         iconUrl =
             'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/239b777c-dc2a-4abb-af0a-acd70339ff35.png';
         title = '金币广场';
-        routesName = YcRoutesNames.dailyTask;
+        // routesName = YcRoutesNames.dailyTask;
       } else if (toolsType == ProfileToolsType.dailyTasks) {
         iconUrl =
             'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/0d75e44d-e95d-4103-be25-4a43f4090527.png';
         title = '日常任务';
-        routesName = YcRoutesNames.dailyTask;
+        // routesName = YcRoutesNames.dailyTask;
       } else if (toolsType == ProfileToolsType.introduction) {
         iconUrl =
             'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/455b3911-e5c6-43ca-bab9-fd802295b56d.png';
         title = '金币攻略';
-        routesName = YcRoutesNames.goldIntroRe;
+        // routesName = YcRoutesNames.goldIntroRe;
       } else if (toolsType == ProfileToolsType.ranking) {
         iconUrl =
             'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/50b6ee88-2234-4b38-896c-277f79add36a.png';
         title = '排行榜';
-        routesName = YcRoutesNames.ranking;
+        // routesName = YcRoutesNames.ranking;
       }
       return GestureDetector(
           behavior: HitTestBehavior.opaque,
           onTap: () {
-            Get.toNamed(routesName);
+            // Get.toNamed(routesName);
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

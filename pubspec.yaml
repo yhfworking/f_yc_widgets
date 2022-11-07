@@ -11,19 +11,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  f_yc_utils:
-    git: https://github.com/yhfworking/f_yc_utils.git
+  get: ^4.6.5
+  google_fonts: ^3.0.1
   f_yc_config:
     git: https://github.com/yhfworking/f_yc_config.git
-  f_yc_compose:
-    git: https://github.com/yhfworking/f_yc_compose.git
-  f_yc_pangle:
-    git: https://github.com/yhfworking/f_yc_pangle.git
-  f_yc_pages:
-    git: https://github.com/yhfworking/f_yc_pages.git
-  f_yc_apis:
-    git: https://github.com/yhfworking/f_yc_apis.git
-  # group_button: ^5.2.0
 
 dev_dependencies:
   flutter_test:

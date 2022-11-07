@@ -1,6 +1,6 @@
-import 'package:f_yc_config/f_yc_config.dart';
-import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:f_yc_widgets/f_yc_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'widgets/index.dart';
 
 typedef ContinuityDaysSignCallback = void Function(int days);
@@ -113,7 +113,7 @@ class PluginGiftSign extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
-                      color: YcConfig.primarySubTextColor()),
+                      color: FYcWidgets.commonConfig.primarySubTextColor),
                 ),
                 Text(
                   continuitySignTimes!.toString(),
@@ -127,7 +127,7 @@ class PluginGiftSign extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
-                      color: YcConfig.primarySubTextColor()),
+                      color: FYcWidgets.commonConfig.primarySubTextColor),
                 ),
               ],
             )),

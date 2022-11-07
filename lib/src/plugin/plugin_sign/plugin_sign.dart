@@ -1,6 +1,6 @@
 import 'dart:math';
-import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'plugin_gift_sign/plugin_gift_sign.dart';
 
 enum SignType { cashSign }
