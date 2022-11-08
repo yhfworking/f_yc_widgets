@@ -10,7 +10,7 @@ class WidgetsProfileWallet extends StatelessWidget {
   final int? balance;
   final String? money;
   final GestureTapCallback? onTap;
-  final VoidCallback? onPressed;
+  final VoidCallback? submitCashEvent;
   const WidgetsProfileWallet(
       {Key? key,
       this.icon,
@@ -19,7 +19,7 @@ class WidgetsProfileWallet extends StatelessWidget {
       this.balance = 0,
       this.money,
       this.onTap,
-      this.onPressed})
+      this.submitCashEvent})
       : super(key: key);
 
   @override
@@ -126,7 +126,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                             side: MaterialStateProperty.all(BorderSide(
                                 width: 1, color: Colors.grey.shade300)), //边框
                           ),
-                          onPressed: onPressed,
+                          onPressed: submitCashEvent,
                           child: Text(btnTitle ?? '去提现'),
                         ),
                       )))

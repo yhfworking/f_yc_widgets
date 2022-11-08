@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class WidgetsProfileUserInfo1 extends StatelessWidget {
+class WidgetsProfileUserInfo extends StatelessWidget {
   final bool isAvatarRight;
   final String nickname;
   final String itro;
   final String avatar;
   final GestureTapCallback? gestureTapCallback;
-  const WidgetsProfileUserInfo1(
+  const WidgetsProfileUserInfo(
       {Key? key,
       required this.isAvatarRight,
       required this.nickname,

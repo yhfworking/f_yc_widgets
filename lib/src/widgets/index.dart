@@ -2,7 +2,7 @@ export './widgets_list_item.dart';
 export './widgets_list_groove.dart';
 export './widgets_network_tips.dart';
 export './widgets_policy_privacy.dart';
-export 'widgets_profile_user_info_1.dart';
+export 'widgets_profile_user_info.dart';
 export './widgets_profile_header.dart';
 export './widgets_profile_section_item.dart';
 export './widgets_profile_wallet.dart';

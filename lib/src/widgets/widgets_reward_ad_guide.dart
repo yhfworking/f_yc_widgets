@@ -28,9 +28,6 @@ class _WidgetsRewardAdGuideState extends State<WidgetsRewardAdGuide> {
       if (_progressValue >= 1.0) {
         timer.cancel();
         widget.showRewardVideoAdEvent();
-        // YcPangle.showRewardVideoAd(
-        //   customData: widget.rewardType,
-        // );
         Get.back();
       }
     });

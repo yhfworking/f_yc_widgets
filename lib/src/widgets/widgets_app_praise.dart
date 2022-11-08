@@ -54,13 +54,6 @@ class WidgetsAppPraise extends StatelessWidget {
                       height: 48,
                       child: ElevatedButton(
                         onPressed: onPressed,
-                        // onPressed: () async {
-                        //   // if (FYcSto.isLogin()) {
-                        //   //   await YcApisDefault.reportAppPraise();
-                        //   // }
-                        //   // YcLaunchReview.toStoreReview();
-                        //   // Get.back();
-                        // },
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 FYcWidgets.commonConfig.primaryColor),

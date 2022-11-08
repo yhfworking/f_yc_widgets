@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets_profile_user_info_1.dart';
+import 'widgets_profile_user_info.dart';
 
 enum HeaderType { avatarLeft, avatarRight }
 
@@ -20,7 +20,7 @@ class WidgetsProfileHeader extends StatelessWidget {
 
   Widget _getWidgets() {
     if (itemType == HeaderType.avatarLeft) {
-      return WidgetsProfileUserInfo1(
+      return WidgetsProfileUserInfo(
         isAvatarRight: false,
         nickname: nickname,
         itro: itro,
@@ -28,7 +28,7 @@ class WidgetsProfileHeader extends StatelessWidget {
         gestureTapCallback: gestureTapCallback,
       );
     } else if (itemType == HeaderType.avatarRight) {
-      return WidgetsProfileUserInfo1(
+      return WidgetsProfileUserInfo(
         isAvatarRight: true,
         nickname: nickname,
         itro: itro,
