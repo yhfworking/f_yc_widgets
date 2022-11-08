@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'widgets_reward_ad_guide.dart';
 
 class WidgetsFloatReIcon extends StatefulWidget {
   final bool? isSignToday;
-  const WidgetsFloatReIcon({Key? key, this.isSignToday = false})
+  final GestureTapCallback? onTap;
+  const WidgetsFloatReIcon({Key? key, this.isSignToday = false, this.onTap})
       : super(key: key);
 
   @override
@@ -46,19 +46,20 @@ class _WidgetsFloatReIconState extends State<WidgetsFloatReIcon>
         height: Get.width / 6.0,
         child: Center(
             child: GestureDetector(
-          onTap: () {
-            // if (!FYcConfig.isLogin()) {
-            //   Get.toNamed(YcRoutesNames.login);
-            //   return;
-            // }
-            // LoadingUtils.show();
-            // Future.delayed(const Duration(milliseconds: 1500), () {
-            //   LoadingUtils.dismiss();
-            //   Get.dialog(const WidgetsRewardAdGuide(
-            //     rewardType: 'timerRewardRe',
-            //   ));
-            // });
-          },
+          onTap: widget.onTap,
+          // onTap: () {
+          // if (!FYcConfig.isLogin()) {
+          //   Get.toNamed(YcRoutesNames.login);
+          //   return;
+          // }
+          // LoadingUtils.show();
+          // Future.delayed(const Duration(milliseconds: 1500), () {
+          //   LoadingUtils.dismiss();
+          //   Get.dialog(const WidgetsRewardAdGuide(
+          //     rewardType: 'timerRewardRe',
+          //   ));
+          // });
+          // },
           child: Image.network(
               'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5353f2f4-024c-4eb4-81ef-2022670f7bfe/faa95949-abf9-4a13-be17-176309590de2.png'),
         )),

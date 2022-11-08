@@ -7,11 +7,13 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
   final Color? primaryColor;
   final GestureTapCallback? userAgreementEventCallBack;
   final GestureTapCallback? privacyPolicyEventCallBack;
+  final VoidCallback? onPressed;
   const WidgetsPolicyPrivacy(
       {Key? key,
       this.primaryColor,
       this.userAgreementEventCallBack,
-      this.privacyPolicyEventCallBack})
+      this.privacyPolicyEventCallBack,
+      this.onPressed})
       : super(key: key);
 
   final TextStyle _lowProfileStyle = const TextStyle(
@@ -104,11 +106,12 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
                       width: 120,
                       height: 44,
                       child: ElevatedButton(
-                        onPressed: () async {
-                          // await GetStorage().write(
-                          //     'Storage_Key_Is_Sign_Privacy_Policy', true);
-                          // Get.back();
-                        },
+                        onPressed: onPressed,
+                        // onPressed: () async {
+                        // await GetStorage().write(
+                        //     'Storage_Key_Is_Sign_Privacy_Policy', true);
+                        // Get.back();
+                        // },
                         style: ButtonStyle(
                             backgroundColor:
                                 MaterialStateProperty.all(primaryColor),

@@ -9,22 +9,24 @@ class WidgetsProfileWallet extends StatelessWidget {
   final String? btnTitle;
   final int? balance;
   final String? money;
+  final GestureTapCallback? onTap;
+  final VoidCallback? onPressed;
   const WidgetsProfileWallet(
       {Key? key,
       this.icon,
       this.title,
       this.btnTitle,
       this.balance = 0,
-      this.money})
+      this.money,
+      this.onTap,
+      this.onPressed})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTap: () {
-        // Get.toNamed(YcRoutesNames.wallet);
-      },
+      onTap: onTap,
       child: Container(
         height: 100,
         width: Get.width,
@@ -124,9 +126,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                             side: MaterialStateProperty.all(BorderSide(
                                 width: 1, color: Colors.grey.shade300)), //边框
                           ),
-                          onPressed: () {
-                            // Get.toNamed(YcRoutesNames.wallet);
-                          },
+                          onPressed: onPressed,
                           child: Text(btnTitle ?? '去提现'),
                         ),
                       )))

@@ -5,9 +5,10 @@ class WidgetsVersionUpgrade extends StatelessWidget {
   final String url;
   final String? title;
   final String? note;
+  final VoidCallback? upgradeEvent;
 
   const WidgetsVersionUpgrade(
-      {Key? key, required this.url, this.title, this.note})
+      {Key? key, required this.url, this.title, this.note, this.upgradeEvent})
       : super(key: key);
 
   @override
@@ -80,10 +81,11 @@ class WidgetsVersionUpgrade extends StatelessWidget {
                     width: cardWidth - 30,
                     height: 48,
                     child: ElevatedButton(
-                      onPressed: () async {
-                        // Get.back();
-                        // await launchUrl(Uri.parse(url));
-                      },
+                      onPressed: upgradeEvent,
+                      // onPressed: () async {
+                      // Get.back();
+                      // await launchUrl(Uri.parse(url));
+                      // },
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(
                               const Color(0XFFe94339)),

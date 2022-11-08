@@ -4,7 +4,11 @@ import 'package:get/get.dart';
 
 class WidgetsRewardAdGuide extends StatefulWidget {
   final String rewardType;
-  const WidgetsRewardAdGuide({Key? key, required this.rewardType})
+  final VoidCallback showRewardVideoAdEvent;
+  const WidgetsRewardAdGuide(
+      {Key? key,
+      required this.rewardType,
+      required this.showRewardVideoAdEvent})
       : super(key: key);
 
   @override
@@ -23,6 +27,7 @@ class _WidgetsRewardAdGuideState extends State<WidgetsRewardAdGuide> {
       });
       if (_progressValue >= 1.0) {
         timer.cancel();
+        widget.showRewardVideoAdEvent();
         // YcPangle.showRewardVideoAd(
         //   customData: widget.rewardType,
         // );

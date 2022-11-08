@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class WidgetsAppPraise extends StatelessWidget {
-  const WidgetsAppPraise({Key? key}) : super(key: key);
+  final VoidCallback? onPressed;
+  const WidgetsAppPraise({Key? key, this.onPressed}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,13 +53,14 @@ class WidgetsAppPraise extends StatelessWidget {
                       width: cardWidth - 30,
                       height: 48,
                       child: ElevatedButton(
-                        onPressed: () async {
-                          // if (FYcSto.isLogin()) {
-                          //   await YcApisDefault.reportAppPraise();
-                          // }
-                          // YcLaunchReview.toStoreReview();
-                          // Get.back();
-                        },
+                        onPressed: onPressed,
+                        // onPressed: () async {
+                        //   // if (FYcSto.isLogin()) {
+                        //   //   await YcApisDefault.reportAppPraise();
+                        //   // }
+                        //   // YcLaunchReview.toStoreReview();
+                        //   // Get.back();
+                        // },
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 FYcWidgets.commonConfig.primaryColor),
