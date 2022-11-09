@@ -8,14 +8,14 @@ class WidgetsProfileHeader extends StatelessWidget {
   final String nickname;
   final String itro;
   final String avatar;
-  final GestureTapCallback? gestureTapCallback;
+  final VoidCallback userInfoEvent;
   const WidgetsProfileHeader(
       {Key? key,
       required this.itemType,
       required this.nickname,
       required this.itro,
       required this.avatar,
-      this.gestureTapCallback})
+      required this.userInfoEvent})
       : super(key: key);
 
   Widget _getWidgets() {
@@ -25,7 +25,7 @@ class WidgetsProfileHeader extends StatelessWidget {
         nickname: nickname,
         itro: itro,
         avatar: avatar,
-        gestureTapCallback: gestureTapCallback,
+        userInfoEvent: userInfoEvent,
       );
     } else if (itemType == HeaderType.avatarRight) {
       return WidgetsProfileUserInfo(
@@ -33,7 +33,7 @@ class WidgetsProfileHeader extends StatelessWidget {
         nickname: nickname,
         itro: itro,
         avatar: avatar,
-        gestureTapCallback: gestureTapCallback,
+        userInfoEvent: userInfoEvent,
       );
     }
     return Container();

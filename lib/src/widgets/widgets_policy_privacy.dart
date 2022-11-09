@@ -5,15 +5,15 @@ import 'package:get/get.dart';
 
 class WidgetsPolicyPrivacy extends StatelessWidget {
   final Color? primaryColor;
-  final GestureTapCallback? userAgreementEventCallBack;
-  final GestureTapCallback? privacyPolicyEventCallBack;
-  final VoidCallback? onPressed;
+  final VoidCallback userAgreementEvent;
+  final VoidCallback privacyPolicyEvent;
+  final VoidCallback agreeEvent;
   const WidgetsPolicyPrivacy(
       {Key? key,
       this.primaryColor,
-      this.userAgreementEventCallBack,
-      this.privacyPolicyEventCallBack,
-      this.onPressed})
+      required this.userAgreementEvent,
+      required this.privacyPolicyEvent,
+      required this.agreeEvent})
       : super(key: key);
 
   final TextStyle _lowProfileStyle = const TextStyle(
@@ -51,7 +51,7 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
                     children: [
                       TextSpan(
                         recognizer: TapGestureRecognizer()
-                          ..onTap = userAgreementEventCallBack,
+                          ..onTap = userAgreementEvent,
                         text: '《服务协议》',
                         style: TextStyle(
                           fontSize: 16.0,
@@ -64,7 +64,7 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
                       ),
                       TextSpan(
                         recognizer: TapGestureRecognizer()
-                          ..onTap = privacyPolicyEventCallBack,
+                          ..onTap = privacyPolicyEvent,
                         text: '《隐私政策》',
                         style: TextStyle(
                           fontSize: 16.0,
@@ -106,7 +106,7 @@ class WidgetsPolicyPrivacy extends StatelessWidget {
                       width: 120,
                       height: 44,
                       child: ElevatedButton(
-                        onPressed: onPressed,
+                        onPressed: agreeEvent,
                         // onPressed: () async {
                         // await GetStorage().write(
                         //     'Storage_Key_Is_Sign_Privacy_Policy', true);

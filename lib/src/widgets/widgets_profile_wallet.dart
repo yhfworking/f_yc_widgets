@@ -9,8 +9,8 @@ class WidgetsProfileWallet extends StatelessWidget {
   final String? btnTitle;
   final int? balance;
   final String? money;
-  final GestureTapCallback? onTap;
-  final VoidCallback? submitCashEvent;
+  final VoidCallback walletEvent;
+  final VoidCallback submitCashEvent;
   const WidgetsProfileWallet(
       {Key? key,
       this.icon,
@@ -18,15 +18,15 @@ class WidgetsProfileWallet extends StatelessWidget {
       this.btnTitle,
       this.balance = 0,
       this.money,
-      this.onTap,
-      this.submitCashEvent})
+      required this.walletEvent,
+      required this.submitCashEvent})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTap: onTap,
+      onTap: walletEvent,
       child: Container(
         height: 100,
         width: Get.width,

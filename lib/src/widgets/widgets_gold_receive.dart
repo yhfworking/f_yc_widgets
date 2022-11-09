@@ -4,8 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class WidgetsGoldReceive extends StatelessWidget {
   final int? amount;
-  final VoidCallback? onPressed;
-  const WidgetsGoldReceive({Key? key, this.amount, this.onPressed})
+  final VoidCallback moreGoodsEvent;
+  const WidgetsGoldReceive(
+      {Key? key, this.amount, required this.moreGoodsEvent})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class WidgetsGoldReceive extends StatelessWidget {
               height: 48,
               margin: const EdgeInsets.only(bottom: 50),
               child: ElevatedButton(
-                onPressed: onPressed,
+                onPressed: moreGoodsEvent,
                 // onPressed: () async {
                 //   Get.back();
                 //   // await YcPangle.showFullScreenVideoAd();

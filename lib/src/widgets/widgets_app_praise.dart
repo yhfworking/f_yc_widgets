@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class WidgetsAppPraise extends StatelessWidget {
-  final VoidCallback? onPressed;
-  const WidgetsAppPraise({Key? key, this.onPressed}) : super(key: key);
+  final VoidCallback appPraiseEvent;
+  const WidgetsAppPraise({Key? key, required this.appPraiseEvent})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +54,7 @@ class WidgetsAppPraise extends StatelessWidget {
                       width: cardWidth - 30,
                       height: 48,
                       child: ElevatedButton(
-                        onPressed: onPressed,
+                        onPressed: appPraiseEvent,
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 FYcWidgets.commonConfig.primaryColor),

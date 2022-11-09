@@ -3,8 +3,9 @@ import 'package:get/get.dart';
 
 class WidgetsFloatReIcon extends StatefulWidget {
   final bool? isSignToday;
-  final GestureTapCallback? onTap;
-  const WidgetsFloatReIcon({Key? key, this.isSignToday = false, this.onTap})
+  final VoidCallback iconEvent;
+  const WidgetsFloatReIcon(
+      {Key? key, this.isSignToday = false, required this.iconEvent})
       : super(key: key);
 
   @override
@@ -46,7 +47,7 @@ class _WidgetsFloatReIconState extends State<WidgetsFloatReIcon>
         height: Get.width / 6.0,
         child: Center(
             child: GestureDetector(
-          onTap: widget.onTap,
+          onTap: widget.iconEvent,
           // onTap: () {
           // if (!FYcConfig.isLogin()) {
           //   Get.toNamed(YcRoutesNames.login);

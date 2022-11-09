@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 
 class WidgetsAdTips extends StatelessWidget {
   final String imageUrl;
-  final GestureTapCallback? onTap;
-  const WidgetsAdTips({Key? key, required this.imageUrl, this.onTap})
+  final VoidCallback? adEvent;
+  const WidgetsAdTips({Key? key, required this.imageUrl, this.adEvent})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class WidgetsAdTips extends StatelessWidget {
             child: GestureDetector(
           onTap: () {
             Get.back();
-            if (onTap != null) {
-              onTap!();
+            if (adEvent != null) {
+              adEvent!();
             }
           },
           child: Image.network(imageUrl),

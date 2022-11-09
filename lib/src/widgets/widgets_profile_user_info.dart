@@ -6,14 +6,14 @@ class WidgetsProfileUserInfo extends StatelessWidget {
   final String nickname;
   final String itro;
   final String avatar;
-  final GestureTapCallback? gestureTapCallback;
+  final VoidCallback userInfoEvent;
   const WidgetsProfileUserInfo(
       {Key? key,
       required this.isAvatarRight,
       required this.nickname,
       required this.itro,
       required this.avatar,
-      this.gestureTapCallback})
+      required this.userInfoEvent})
       : super(key: key);
 
   @override
@@ -25,7 +25,7 @@ class WidgetsProfileUserInfo extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15, right: 15),
         child: GestureDetector(
           behavior: HitTestBehavior.opaque,
-          onTap: gestureTapCallback,
+          onTap: userInfoEvent,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,7 +75,7 @@ class WidgetsProfileUserInfo extends StatelessWidget {
         padding: const EdgeInsets.only(left: 15, right: 15),
         child: GestureDetector(
           behavior: HitTestBehavior.opaque,
-          onTap: gestureTapCallback,
+          onTap: userInfoEvent,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,

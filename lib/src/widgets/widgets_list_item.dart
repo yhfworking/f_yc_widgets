@@ -6,21 +6,21 @@ class WidgetsListItem extends StatelessWidget {
   final String? title;
   final bool? isArrow;
   final Widget? infoWidget;
-  final GestureTapCallback? onTap;
+  final VoidCallback itemEvent;
   const WidgetsListItem(
       {Key? key,
       this.icon,
       this.title,
       this.isArrow,
       this.infoWidget,
-      this.onTap})
+      required this.itemEvent})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTap: onTap,
+      onTap: itemEvent,
       child: Container(
         height: 60,
         width: double.infinity,

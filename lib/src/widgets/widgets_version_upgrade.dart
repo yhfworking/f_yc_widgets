@@ -5,10 +5,14 @@ class WidgetsVersionUpgrade extends StatelessWidget {
   final String url;
   final String? title;
   final String? note;
-  final VoidCallback? upgradeEvent;
+  final VoidCallback upgradeEvent;
 
   const WidgetsVersionUpgrade(
-      {Key? key, required this.url, this.title, this.note, this.upgradeEvent})
+      {Key? key,
+      required this.url,
+      this.title,
+      this.note,
+      required this.upgradeEvent})
       : super(key: key);
 
   @override
