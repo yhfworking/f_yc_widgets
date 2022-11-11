@@ -8,7 +8,7 @@ import 'package:group_button/group_button.dart';
 class WidgetsCashOutOptions extends StatelessWidget {
   final int balance;
   final String money;
-  final VoidCallback submitCashOutEvent;
+  final Function(int amount) submitCashOutEvent;
   WidgetsCashOutOptions(
       {Key? key,
       required this.balance,
@@ -127,7 +127,7 @@ class WidgetsCashOutOptions extends StatelessWidget {
             height: 50,
             width: Get.width - 30,
             child: ElevatedButton(
-              onPressed: submitCashOutEvent,
+              onPressed: submitCashOutEvent(_amount),
               style: ButtonStyle(
                   elevation: MaterialStateProperty.all(0),
                   backgroundColor: MaterialStateProperty.all(
