@@ -73,7 +73,7 @@ class WidgetsProfileWallet extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
-                          balance != 0 ? balance.toString() : '888.88',
+                          balance != 0 ? balance.toString() : '0',
                           style: GoogleFonts.oswald(
                               fontSize: 26,
                               color: const Color(0xFFFFAA16),
