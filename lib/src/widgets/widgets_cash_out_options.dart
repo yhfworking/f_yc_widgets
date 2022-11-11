@@ -127,7 +127,9 @@ class WidgetsCashOutOptions extends StatelessWidget {
             height: 50,
             width: Get.width - 30,
             child: ElevatedButton(
-              onPressed: submitCashOutEvent(_amount),
+              onPressed: () {
+                submitCashOutEvent(_amount);
+              },
               style: ButtonStyle(
                   elevation: MaterialStateProperty.all(0),
                   backgroundColor: MaterialStateProperty.all(
