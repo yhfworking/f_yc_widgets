@@ -17,6 +17,8 @@ dependencies:
   group_button: ^5.2.2
   f_yc_config:
     git: https://github.com/yhfworking/f_yc_config.git
+  f_yc_pangle:
+    git: https://github.com/yhfworking/f_yc_pangle.git
 
 dev_dependencies:
   flutter_test:
