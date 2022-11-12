@@ -6,7 +6,6 @@ export 'widgets_profile_user_info.dart';
 export './widgets_profile_header.dart';
 export './widgets_profile_section_item.dart';
 export './widgets_profile_wallet.dart';
-export './widgets_welfare_re_banner_ad.dart';
 export './widgets_profile_tools.dart';
 export './widgets_gold_receive.dart';
 export './widgets_ad_tips.dart';
