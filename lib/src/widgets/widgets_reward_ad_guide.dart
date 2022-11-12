@@ -3,12 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class WidgetsRewardAdGuide extends StatefulWidget {
-  final String rewardType;
   final VoidCallback showRewardVideoAdEvent;
-  const WidgetsRewardAdGuide(
-      {Key? key,
-      required this.rewardType,
-      required this.showRewardVideoAdEvent})
+  const WidgetsRewardAdGuide({Key? key, required this.showRewardVideoAdEvent})
       : super(key: key);
 
   @override
