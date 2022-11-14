@@ -4,9 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 class WidgetsGoldReceive extends StatelessWidget {
   final int? amount;
-  final VoidCallback moreGoodsEvent;
+  final String buttonText;
+  final VoidCallback buttonEvent;
   const WidgetsGoldReceive(
-      {Key? key, this.amount, required this.moreGoodsEvent})
+      {Key? key,
+      this.amount,
+      required this.buttonText,
+      required this.buttonEvent})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -56,18 +60,14 @@ class WidgetsGoldReceive extends StatelessWidget {
               height: 48,
               margin: const EdgeInsets.only(bottom: 50),
               child: ElevatedButton(
-                onPressed: moreGoodsEvent,
-                // onPressed: () async {
-                //   Get.back();
-                //   // await YcPangle.showFullScreenVideoAd();
-                // },
+                onPressed: buttonEvent,
                 style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all(const Color(0xFFFFEB01)),
                     elevation: MaterialStateProperty.all(0)),
-                child: const Text(
-                  '浏览商品领更多福利！',
-                  style: TextStyle(fontSize: 16, color: Colors.red),
+                child: Text(
+                  buttonText,
+                  style: const TextStyle(fontSize: 16, color: Colors.red),
                 ),
               ),
             )
